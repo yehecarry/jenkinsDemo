@@ -4,17 +4,17 @@ pipeline{
     // 定义使用构建的jenkins 主机
     agetnt{
         // 在任何可用的节点上执行Pipeline
-        // any {}
+        any {}
         // 当在 pipeline 块的顶部没有全局代理， 该参数将会被分配到整个流水线的运行中并且每个 stage 部分都需要包含他自己的 agent 部分
-        // none {}
+        none {}
         // 在提供了标签的 Jenkins 环境中可用的代理上执行流水线或阶段
-        // label {}
+        label {}
         // 与label相同，不过可以附加而外的参数
-        // node {}
+        node {}
         // 使用docker的方式执行pipeline
-        // docker {}
+        docker {}
         // 使用dockerfile 构建出一个docker 并使用该docker执行pipeline
-        // dockerfile {}
+        dockerfile {}
     }
 
     post{
